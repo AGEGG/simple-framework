@@ -1,7 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: AGEGG-WORK
- * Date: 2019/6/4
- * Time: 15:21
- */
+namespace sf\base;
+
+use Exception;
+
+abstract class Application
+{
+    public $controllerNamespace = 'app\\controllers';
+
+    public function run()
+    {
+        try{
+            return $this->handleRequest();
+        } catch(Exception $e){
+            return $e;
+        }
+    }
+
+    abstract public function handleRequest();
+}
