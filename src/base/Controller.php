@@ -1,7 +1,19 @@
 <?php
+namespace sf\base;
+
 /**
- * Created by PhpStorm.
- * User: AGEGG-WORK
- * Date: 2019/6/4
- * Time: 15:58
+ * Controller is the base class for classes containing controller logic.
  */
+class Controller
+{
+    /**
+     * @var string the ID of this controller.
+     */
+    public $id;
+
+    /**
+     * @var Action the action that is currently being executed.
+     */
+    public $action;
+
+}
