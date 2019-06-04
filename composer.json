@@ -1,0 +1,20 @@
+{
+    "name": "agegg/simple-framework",
+    "description": "A simple php framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AGEGG",
+            "email": "2250389620@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "sf\\": "src/",
+            "app\\": ""
+        }
+    }
+}
